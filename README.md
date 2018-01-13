@@ -1,1 +1,0 @@
-# Mint-Theme-for-Firefox
