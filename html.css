@@ -1,0 +1,104 @@
+::selection {
+	color: #171F2F !important;
+	background: #FAE132 !important;
+	text-shadow: none !important;
+}
+
+
+:link {
+	text-decoration-skip: ink !important;
+}
+
+:visited {
+	filter: grayscale(1) !important;
+	text-decoration: line-through !important;
+	opacity: 0.7 !important;
+}
+
+:bookmarked {
+	background: #3F9276 !important;
+}
+
+
+The pseudo-class, ":optional", is applied to the select, input, and textarea elements which hold the attribute.
+:optional {
+	border: 1px #17F0B6 !important;
+}
+:required {
+	border: 1px #177B5B !important;
+}
+
+:disabled {
+	filter: grayscale(1) !important;
+	cursor: not-allowed !important;
+}
+The psuedo-class is applied to the select, input, and textarea elements which has validation and
+::-moz-ui-invalid {
+	filter: grayscale(0.6) !important;
+	border: #BAC0BF !important;
+}
+
+::-moz-window-inactive {
+	filter: grayscale(1) !important;
+}
+
+:disabled {
+	filter: grayscale(1) !important;
+	cursor: not-allowed !important;
+}
+
+button {
+	color: #177B5B;
+	background: #F7F7F7;
+	border: 2px solid #177B5B;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 1px #7BF0B6;
+	font: bold 0.7rem "Roboto";
+	text-transform: capitalize;
+}
+
+button[type="reset"] {
+	color: #0E3FB6;
+	background: #F7F7F7;
+	border: 2px solid #0E3FB6;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 1px #1F60AB;
+	font: bold 0.7rem "Roboto";
+	text-transform: capitalize;
+}
+
+button[type="submit"] {
+	color: #F21706;
+	background: #F7F7F7;
+	border: 2px solid #F21706;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 1px #F21706;
+	font: bold 0.7rem "Roboto";
+	text-transform: capitalize;
+}
+
+button:disabled {
+	filter: grayscale(1);
+	cursor: not-allowed;
+	color: #171F2F;
+	background: #F7F7F7;
+	border: 2px solid #171F2F;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 1px #BAC0BF;
+	text-transform: capitalize;
+	font: bold 0.7rem "Roboto";
+}
+
+
+progress {
+	border: 1px solid #171F2F !important;
+	border-radius: 1px !important;
+	box-shadow: 0px 0px 2px 1px #171F2F !important;
+}
+::-moz-progress-bar {
+	background: #3F9276 !important;
+}
+
+:-moz-ui-invalid {
+	filter: grayscale(1) !important;
+}
