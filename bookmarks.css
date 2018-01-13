@@ -1,0 +1,29 @@
+#personal-bookmarks {
+	height: 20px !important;
+	background: #F8F8F8 !important;
+}
+
+.bookmark-item {
+	background: none !important;
+	border: none !important;
+	border-radius: 2px !important;
+	padding: 0px 6px !important;
+}
+.bookmark-item:hover {
+	background: #3F9276 !important;
+	border: 1px solid #7BF0B6 !important;
+}
+.bookmark-item:active {
+}
+.bookmark-item .toolbarbutton-icon {
+	display: none !important;
+}
+.bookmark-item .toolbarbutton-text {
+	color: #171F2F !important;
+	font: 12px "Roboto" !important;
+	text-align: center !important;
+}
+{
+	color: #7BF0B6 !important;
+	font: bold 12px "Roboto" !important;
+}
