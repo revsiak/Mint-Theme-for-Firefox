@@ -1,0 +1,265 @@
+/* AGENT_SHEET */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#TabsToolbar {
+	margin-left: 106px !important;
+	background: transparent !important;
+}
+#TabsToolbar::after {
+	display: none !important;
+}
+
+
+#tabbrowser-tabs {
+	min-height: 0px !important;
+}
+.tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox {
+	overflow: auto !important;
+}
+.tabbrowser-arrowscrollbox .scrollbutton-up,
+.tabbrowser-arrowscrollbox .scrollbutton-down {
+	height: 20px !important;
+	width: 20px !important;
+	margin-bottom: 0px !important;
+	list-style-image: none !important;
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	transform: none !important;
+}
+.tabbrowser-arrowscrollbox .scrollbutton-up {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='16' height='16'><path d='m 10,2.3622 1,1.2 -4.8,5.3 4.8,4.3 -1,1.2 -6,-5.5 6,-6.5' fill='%23177B5B' fill-opacity='1' stroke='none'/></svg>") no-repeat center !important;
+}
+.tabbrowser-arrowscrollbox .scrollbutton-up[disabled] {
+	opacity: 1 !important;
+	filter: grayscale(1) !important;
+}
+.tabbrowser-arrowscrollbox .arrowscrollbox-overflow-start-indicator {
+	height: 100% !important;
+	width: 20px !important;
+	margin-bottom: 0px !important;
+	background: linear-gradient(80deg, #7BF0B6, transparent 80%) !important;
+	border-left: 1px solid #7BF0B6 !important;
+	opacity: 0.6 !important;
+	-moz-margin-end: -20px !important;
+	-moz-margin-start: 0px !important;
+}
+.tabbrowser-arrowscrollbox .scrollbutton-down {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='16' height='16'><path d='m 5,2.3622 -1,1.2 4.8,5.3 -4.8,4.3 1,1.2 6,-5.5 -6,-6.5' fill='%23177B5B' fill-opacity='1' stroke='none'/></svg>") no-repeat center !important;
+}
+.tabbrowser-arrowscrollbox .scrollbutton-down[disabled] {
+	opacity: 1 !important;
+	filter: grayscale(1) !important;
+}
+.tabbrowser-arrowscrollbox .arrowscrollbox-overflow-end-indicator {
+	transform: none !important;
+	height: 100% !important;
+	width: 20px !important;
+	margin-bottom: 0px !important;
+	background: linear-gradient(100deg, transparent 20%, #7BF0B6) !important;
+	border-right: 1px solid #177B5B !important;
+	opacity: 0.6 !important;
+	-moz-margin-end: 0px !important;
+	-moz-margin-start: -20px !important;
+}
+#alltabs-button {
+	-moz-box-ordinal-group:  0 !important;
+	height: 16px !important;
+	width: 16px !important;
+	list-style-image: none !important;
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='16' height='16'><path d='m 5.5,8.3622 5,0 -2.5,3 z' fill='%23F8F8F8' fill-opacity='1' stroke='none'/></svg>") no-repeat center !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+.tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox scrollbar {
+	position: relative !important;
+	-moz-appearance: none !important;
+	margin-top: -8px !important;
+	height: 8px !important;
+	background: transparent !important;
+	mix-blend-mode: lighten !important;
+	pointer-events: none !important;
+}
+.tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox scrollbar scrollbarbutton {
+	display: none !important;
+}
+.tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox scrollbar thumb {
+	-moz-appearance: none !important;
+	background: linear-gradient(transparent 60%, rgba(3,33,118,0.8)) !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+
+.tab-background {
+	display: none !important;
+}
+.tabbrowser-tab::before,
+.tabbrowser-tab::after {
+	width: 1px !important;
+	height: 100% !important;
+	opacity: 1 !important;
+	background: linear-gradient(transparent 8%, rgba(48,94,71,0.4) 48%, rgba(48,94,71,1) 88%) !important;
+	border: none !important;
+}
+.tabbrowser-tab:first-child::before {
+	content: "" !important;
+	display: inline-block !important;
+}
+.tabbrowser-tab::after {
+	content: "" !important;
+	display: inline-block !important;
+}
+.tabbrowser-tab[beforeselected]::after,
+.tabbrowser-tab[afterselected]::before,
+.tabbrowser-tab[beforehovered]::after,
+.tabbrowser-tab[afterhovered]::before,
+.tabbrowser-tab[selected]::before,
+.tabbrowser-tab[selected]::after,
+.tabbrowser-tab:hover::before,
+.tabbrowser-tab:hover::after {
+	display: none !important;
+}
+
+.tabbrowser-tab {
+	min-width: 180px !important;
+	max-width: 180px !important;
+	height: 26px !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: 2px 2px 0px 0px !important;
+	pointer-events: all !important;
+}
+.tabbrowser-tab .tab-icon-image {
+	opacity: 0 !important;
+}
+.tabbrowser-tab .tab-text {
+	font: 12px "Roboto" !important;
+	color: #F8F8F8 !important;
+	text-align: center !important;
+}
+.tabbrowser-tab .tab-close-button {
+	display: initial !important;
+	opacity: 0 !important;
+	list-style-image: none !important;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAfdEVYdFRpdGxlAEdub21lIFN5bWJvbGljIEljb24gVGhlbWWOpCmrAAAAeklEQVQImUXBMQ4BQQCF4f/JNi5g7Dk4kkYUIiEKiZ1JFBLaDZ37GO5BKZHINvMUCt9HyLELOe5sY5vBNW5Djl2FOGE29S31EUViKTgLW8OcWospP5fnmEnP4CLe/L1MUxRy3ANrQwsgmBkOFbCQOD5GzQqgvqcPZv4F0HovtOUOoYsAAAAASUVORK5CYII=") no-repeat center !important;
+	pointer-events: none !important;
+}
+.tabbrowser-tab .tab-icon-overlay {
+	height: 12px !important;
+	width: 12px !important;
+	margin: -7px 0px 0px -14px !important;
+	padding: 1px !important;
+	background: #F8F8F8 !important;
+	border: none !important;
+	border-radius: 8px !important;
+	box-shadow: 0px 0px 2px #171F2F !important;
+}
+
+.tabbrowser-tab:hover {
+	background: #BAC0B6 !important;
+	border: 1px solid #171F2F !important;
+}
+.tabbrowser-tab:hover .tab-text {
+	color: #171F2F !important;
+}
+
+.tabbrowser-tab[selected] {
+	background: #F8F8F8 !important;
+	border: 1px solid #171F2F !important;
+	border-bottom: 0px !important;
+}
+.tabbrowser-tab[selected] .tab-icon-image {
+	opacity: 1 !important;
+}
+.tabbrowser-tab[selected] .tab-text {
+	font: bold 12px "Roboto" !important;
+	color: #171F2F !important;
+}
+.tabbrowser-tab[selected] .tab-close-button {
+	opacity: 1 !important;
+	pointer-events: all !important;
+}
+
+.tab-icon-sound {
+	display: none !important;
+}
+.tabbrowser-tab[soundplaying] .tab-icon-image,
+.tabbrowser-tab[soundplaying] .tab-close-button {
+	opacity: 1 !important;
+	filter: grayscale(1) !important;
+}
+.tabbrowser-tab[soundplaying] .tab-text {
+	color: #B6B6B6 !important;
+}
+.tabbrowser-tab[selected][soundplaying] .tab-icon-image,
+.tabbrowser-tab[selected][soundplaying] .tab-close-button {
+	filter: grayscale(0) !important;
+}
+.tabbrowser-tab .tab-icon-overlay[soundplaying] {
+	display: block !important;
+	background: url("") !important;
+}
+.tabbrowser-tab .tab-icon-overlay[muted] {
+	background: url("") !important;
+}
+
+.tabbrowser-tab[unread] {
+	position: relative !important;
+	clip-path: polygon(0% 0%, calc(100% - 8px) 0%, 100% 8px, 100% 100%, 0% 100%) !important;
+}
+.tabbrowser-tab[unread]::before {
+	position: absolute !important;
+	content: "" !important;
+	top: 0 !important;
+	right: 100% !important;
+	width: 8px !important;
+	height: 8px !important;
+	clip-path: polygon(0% 0%, 100% 100%, 0% 100%) !important;
+	background: #B6B6B6 !important;
+	border: 1px solid #171F2F !important;
+	border-radius: 2px !important;
+	box-shadow: 2px 0px 2px #177B5B !important;
+}
+/* The underline can be implemented through text-decoration, text-decoration-width, text-decoration-offset, and text-decoration-color when css-text-decor-4 is available. */
+.tabbrowser-tab[unread] .tab-text {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='1' height='4'><rect height='4' width='1' fill='%23F21706' fill-opacity='0.4' stroke='none'/></svg>") !important;
+	background-size: 100% 4px !important;
+	background-position: 0% calc(100% - 2px) !important;
+	background-repeat: no-repeat !important;
+}
+
+.tabbrowser-tab[pending] {
+	opacity: 0.6 !important;
+}
+.tabbrowser-tab[unload] {
+	opacity: 0.6 !important;
+}
+.tabbrowser-tab[unload] .tab-icon-image {
+	filter: grayscale(1) !important;
+}
+.tabbrowser-tab[unload] .tab-text {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='1' height='4'><rect height='4' width='1' fill='%230E3FB6' fill-opacity='0.4' stroke='none'/></svg>") !important;
+	background-size: 100% 4px !important;
+	background-position: 0% calc(100% - 2px) !important;
+	background-repeat: no-repeat !important;
+}
+.tabbrowser-tab[unload] .tab-close-button {
+	filter: grayscale(1) !important;
+}
+
+
+.tabbrowser-tab .tab-icon-image:not([src]) {
+	display: block !important;
+}
+.tabbrowser-tab .tab-label-container {
+	display: inline-block !important;
+	mask-image: none !important;
+}
+.tabbrowser-tab .tab-text {
+	-moz-box-flex: 1 !important;
+	width: 123px !important;
+	max-width: 123px !important;
+	text-overflow: ".." !important;
+	overflow: hidden !important;
+}
