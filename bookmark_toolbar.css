@@ -1,0 +1,29 @@
+/* AGENT_SHEET */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper.there.is.only.xul");
+
+#PersonalToolbar {
+	padding: 0px !important;
+	border-color: #171F2F !important;
+}
+#personal-bookmarks {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	height: 22px !important;
+	background: #F8F8F8 !important;
+	min-height: 0px !important;
+}
+
+#personal-bookmarks .bookmark-item {
+	padding: 0px 6px !important;
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+#personal-bookmarks .bookmark-item .toolbarbutton-icon {
+	display: none !important;
+}
+#personal-bookmarks .bookmark-item .toolbarbutton-text {
+	color: #171F2F !important;
+	font: bold 12px "Roboto" !important;
+}
